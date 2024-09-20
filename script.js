@@ -1,3 +1,7 @@
+if (window.innerWidth < 768) {
+            document.body.innerHTML = '<h2 class="alert">This feature is only available on desktop screens.</h2>';
+}
+else{
 const chatBox = document.getElementById('chat-box');
 const chatForm = document.getElementById('chat-form');
 const userInput = document.getElementById('user-input');
@@ -145,6 +149,7 @@ newChatBtn.addEventListener('click', () => {
     currentConversation = [];
     chatBox.innerHTML = ''; // Clear the current chat box
 });
+}
 
 // Save conversation to history
 function saveConversation() {
