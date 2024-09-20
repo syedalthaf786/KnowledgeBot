@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone with Sidebar & Chat History</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>KnowledgeBot</h3>
+        <span>guidance and exploration</span>
+          <hr>
+        <h5>Conversations</h5>
+        <div class="chat-history" id="chat-history">
+            <!-- Chat history will be displayed here -->
+        </div>
+        <button class="btn btn-primary m-3" id="new-chat-btn">
+            <i class="fas fa-plus"></i> New Chat
+        </button>
+        <!-- <button class="btn btn-secondary" id="toggle-dark-mode">Dark Mode</button> -->
+</div>
+    </div>
+
+    <!-- Chat container -->
+    <div class="chat-container">
+        <div class="chat-box-container" id="chat-box-container">
+            <div id="chat-box">
+                <!-- Chat messages will appear here -->
+            </div>
+        </div>
+        <div class="footer">
+            <form id="chat-form" class="d-flex w-100">
+                <input type="text" id="user-input"  placeholder="Type a message..." required>
+                <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
