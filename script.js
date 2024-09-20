@@ -149,7 +149,7 @@ newChatBtn.addEventListener('click', () => {
     currentConversation = [];
     chatBox.innerHTML = ''; // Clear the current chat box
 });
-}
+
 
 // Save conversation to history
 function saveConversation() {
@@ -172,4 +172,5 @@ function loadConversation(index) {
     currentConversation.forEach(({ text, isBot }) => {
         addMessage(text, isBot);
     });
+}
 }
